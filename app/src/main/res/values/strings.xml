@@ -1,0 +1,34 @@
+<resources>
+    <!-- main page-->
+    <string name="app_name">Kontak Darurat</string>
+    <string name="top_main_1">Silahkan isi kolom di bawah</string>
+    <string name="top_main_2">Pastikan device anda terkoneksi dengan internet saat ingin membuat QR Code</string>
+    <string name="QR_button">Buat QR Code</string>
+    <string name="save_button">Simpan QR Code</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_noid">Nomor KTP</string>
+    <string name="hint_bpjs">Nomor BPJS Kesehatan</string>
+    <string name="hint_mother">Nomor telepon ibu/istri</string>
+    <string name="hint_father">Nomor telepon bapak/suami</string>
+    <string name="hint_office">Nomor telepon kantor</string>
+    <string name="hint_other">Nomor telepon darurat lainnya</string>
+
+    <!-- menu -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">Tentang</string>
+    <string name="action_tutorial">Cara Penggunaan</string>
+
+    <!-- about page -->
+    <string name="about_title">Apa itu Kontak Darurat?</string>
+    <string name="about_content">Kontak Darurat : adalah aplikasi android sederhana dimana pengguna bisa menyimpan data nomor kontak darurat. Nomor kontak tersebut akan disimpan secara lokal dan juga akan dikonversi dalam bentuk image QR Code. Image tersebut lalu bisa di jadikan wallpaper mobile phone ataupun di print dan ditempelkan ke body mobile phone.</string>
+
+    <!-- tutorial page -->
+    <string name="tutorial_title">Bagaimana cara menggunakan Kontak Darurat?</string>
+    <string name="tutorial_1">1. Isi kolom yang tersedia</string>
+    <string name="tutorial_2">2. Tekan tombol "Buat QR Code" untuk mengkonversi data menjadi gambar QR Code</string>
+    <string name="tutorial_3">3. Jika melakukan perubahan data, jangan lupa tekan tombol "Buat QR Code"</string>
+    <string name="tutorial_4">4. Jika sudah yakin dengan datanya, tekan tombol "Simpan QR Code" untuk menyimpan gambar QR code di device anda</string>
+    <string name="tutorial_5">5. Buka gallery dan pilih gambar QR code terbaru kemudian set gambar tersebut sebagai lock screen, sehingga bisa QR code bisa di scan tanpa harus membuka lock device anda</string>
+    <string name="tutorial_6">6. Alternatif penggunaan, print gambar tersebut pada kertas stricker kemudian tempelkan sticker tersebut di body atau casing device anda</string>
+</resources>
