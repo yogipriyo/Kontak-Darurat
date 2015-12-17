@@ -7,7 +7,7 @@ Berangkat dari kekhawatiran tersebut, aplikasi Kontak Darurat ini dibuat. Kontak
 
 Untuk membaca nomor - nomor yang tersimpan dalam gambar QR Code tersebut, bisa menggunakan aplikasi QR Code scanner apapun yang tersedia di Google Play maupun Apps Store. Aplikasi ini tidak berbayar (100% gratis tanpa embel - embel) dan tidak ada rencana untuk menambahkan iklan dalam bentuk apapun di masa mendatang.
 
-Untuk kritik dan saran bisa disampaikan di kolom komentar di bawah atau kirim ke email yogipriyo.prayogo@gmail.com
+Untuk kritik dan saran bisa disampaikan ke email yogipriyo.prayogo@gmail.com
 Aplikasi ini merupakan aplikasi Open Source. Bagi teman - teman yang ingin berkontribusi, sangat diterima dengan tangan terbuka
 
 Semoga aplikasi ini bisa membantu.
