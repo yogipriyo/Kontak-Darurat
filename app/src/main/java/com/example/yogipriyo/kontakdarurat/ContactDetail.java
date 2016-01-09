@@ -192,8 +192,8 @@ public class ContactDetail extends AppCompatActivity implements View.OnClickList
                 ////
 
 
+                //check external storage availability
                 Boolean haveSd= android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
-
                 if(haveSd)
                 {
                     // Work on device-sd
