@@ -2,7 +2,7 @@
     <!-- main page-->
     <string name="app_name">Kontak Darurat</string>
     <string name="top_main_1">Silahkan isi kolom di bawah</string>
-    <string name="top_main_2">Pastikan device anda terkoneksi dengan internet saat ingin membuat QR Code</string>
+    <string name="top_main_2">Pastikan device anda terkoneksi dengan internet dan memiliki external storage (sdCard) saat ingin membuat QR Code</string>
     <string name="QR_button">Buat QR Code</string>
     <string name="save_button">Simpan QR Code</string>
     <string name="hint_name">Nama Lengkap</string>

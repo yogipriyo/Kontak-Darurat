@@ -50,6 +50,8 @@ public class ContactDetail extends AppCompatActivity implements View.OnClickList
     SimpleDateFormat dateFormat= new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZZZZZ", Locale.ENGLISH);
     String cDateTime=dateFormat.format(new Date());
 
+    File image, sticker;
+
     DatabaseHandler db = new DatabaseHandler(this);
 
     @Override
@@ -172,7 +174,7 @@ public class ContactDetail extends AppCompatActivity implements View.OnClickList
                 }
 
                 // Inserting Contacts
-                Log.d("Insert: ", "Inserting ..");
+//                Log.d("Insert: ", "Inserting ..");
                 db.addContact(new Contact(NameText.getText().toString(), NoIdText.getText().toString(), BpjsText.getText().toString(),MotherText.getText().toString(), FatherText.getText().toString(), OfficeText.getText().toString(), OtherText.getText().toString()));
             break;
 
@@ -189,9 +191,27 @@ public class ContactDetail extends AppCompatActivity implements View.OnClickList
                 Bitmap cs = combineImages(bitmap, bitmap2);
                 ////
 
-                File sdCardDirectory = Environment.getExternalStorageDirectory();
-                File image = new File(sdCardDirectory+"/DCIM", cDateTime+"-qr_lockscreen.png");
-                File sticker = new File(sdCardDirectory+"/DCIM", cDateTime+"-qr_sticker.png");
+
+                Boolean haveSd= android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
+
+                if(haveSd)
+                {
+                    // Work on device-sd
+                    File sdCardDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+                    if (!sdCardDirectory.exists()) {
+                        sdCardDirectory.mkdirs();
+                    }
+                    image = new File(sdCardDirectory, "qr_lockscreen.png");
+                    sticker = new File(sdCardDirectory, "qr_sticker.png");
+                }
+                else
+                {
+                    //Work on device
+                    //File internalCard = getFilesDir();
+                    File internalCard = Environment.getDataDirectory();
+                    image = new File(internalCard, "qr_lockscreen.png");
+                    sticker = new File(internalCard, "qr_sticker.png");
+                }
 
                 boolean success = false;
 
